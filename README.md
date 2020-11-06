@@ -19,7 +19,7 @@ To run a code need to open Simulator.sln in Visual Studio and retarget project t
 
 #### Scenario 1: Intro
 
-In this scenario, we need to adjust the mass of the drone in [/config/QuadControlParams.txt](./cpp/config/QuadControlParams.txt) until it starts to hover a little:
+In this scenario, we need to adjust the mass of the drone in [/config/QuadControlParams.txt](./config/QuadControlParams.txt) until it starts to hover a little:
 
 ![Scenario 1](./images/scenario1.gif)
 
@@ -32,7 +32,7 @@ PASS: ABS(Quad.PosFollowErr) was less than 0.500000 for at least 0.800000 second
 
 #### Scenario 2: Body rate and roll/pitch control
 
-The [GenerateMotorCommands method](./src/QuadControl.cpp#L58-L93) needs to be coded resolving the following equations:
+The [GenerateMotorCommands method](./src/QuadControl.cpp) needs to be coded resolving the following equations:
 
 ![Moment force equations](./images/moments_force_eq.gif)
 
